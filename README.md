@@ -4,8 +4,6 @@
 
 A modern, responsive, and elegant landing page for a specialty coffee shop built with **HTML5**, **CSS3**, and **Bootstrap 5**.
 
-![Brew Haven Preview](./media/photo-1511081692775-05d0f180a065.jpg)
-
 ##  Features
 
 - **Responsive Design:** Fully optimized for desktops, tablets, and mobile screens.
