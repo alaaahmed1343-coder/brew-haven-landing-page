@@ -24,37 +24,25 @@
   --transition-fast: all 0.3s ease;
   --shadow-hover: 0 10px 20px rgba(0, 0, 0, 0.3);
 
+  /* Fonts */
   --body-font: 'Poppins', sans-serif;
   --heading-font: 'Montserrat', sans-serif;
-
   --item-title-font: 'Cormorant Garamond', serif; 
   --price-font: 'Oswald', sans-serif;            
-  --desc-font: 'Poppins', sans-serif;
-
   --font-heading: 'Playfair Display', serif;
-  --font-body-visit: 'Plus Jakarta Sans', sans-serif;
 }
 
-/* ===========================
-   Global Reset & Base
-=========================== */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 html {
-  font-size: 1rem;
   scroll-behavior: smooth;
 }
 
 body {
-  
-font-family: var(--body-font);
+  font-family: var(--body-font);
   background-color: var(--bg-dark-primary);
   color: var(--text-white);
 }
+
 h1, h2, h3, h4, h5, h6, .navbar-brand {
   font-family: var(--heading-font);
 }
@@ -63,7 +51,6 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
    Hero Section
 =========================== */
 .hero {
-  min-height: 100vh;
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
     url("../media/photo-1511081692775-05d0f180a065.jpg");
@@ -71,9 +58,9 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
   background-position: center;
   background-repeat: no-repeat;
 }
+
 .hero .hero-text {
   color: var(--primary-color);
- 
 }
 
 .navbar-nav .nav-link {
@@ -84,19 +71,17 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
   color: var(--primary-color) !important;
   transform: translateY(-2px);
 }
+
 .icon-location {
   color: var(--primary-color);
-  font-size: 1.2rem;
   transition: var(--transition-fast);
 }
+
 .icon-location:hover {
   transform: scale(1.1);
 }
 
 .navbar-toggler {
-  border: none;
-  box-shadow: none !important;
-  padding: 8px 12px;
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(5px);
   border-radius: var(--border-radius-sm);
@@ -120,8 +105,6 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
 }
 
 .hero .btn-outline-light {
-  color: var(--text-white);
-  border-color: var(--text-white);
   transition: var(--transition-fast);
 }
 
@@ -157,21 +140,15 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
 =========================== */
 .story-section {
   background-color: var(--bg-dark-secondary);
-  color: var(--text-white);
 }
 
 .story-img-wrapper {
-  width: 100%;
   border-radius: var(--border-radius-lg);
-  overflow: hidden;
 }
 
 .story-img {
-  width: 100%;
-  height: 100%;
   max-height: 520px;
   object-fit: cover;
-  display: block;
   border-radius: var(--border-radius-lg);
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
@@ -183,29 +160,12 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
 
 .story-title {
   font-size: 2.75rem;
-  font-weight: 700;
-  color: var(--text-white);
-  margin-bottom: 1.5rem;
 }
 
 .story-text {
   color: var(--text-muted);
   font-size: 0.95rem;
   line-height: 1.6;
-  margin-bottom: 1rem;
-}
-
-.story-features {
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
-  margin-top: 2rem;
-}
-
-.feature-item {
-  display: flex;
-  align-items: center;
-  gap: 1.2rem;
 }
 
 .feature-icon {
@@ -213,11 +173,6 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
   height: 44px;
   background-color: var(--icon-bg);
   color: var(--bg-dark-primary);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.1rem;
   transition: var(--transition-fast);
 }
 
@@ -228,15 +183,11 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
 
 .feature-title {
   font-size: 1rem;
-  font-weight: 700;
-  color: var(--text-white);
-  margin: 0 0 2px 0;
 }
 
 .feature-desc {
   font-size: 0.85rem;
   color: var(--text-subtle);
-  margin: 0;
 }
 
 /* ===========================
@@ -244,17 +195,13 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
 =========================== */
 .menu-section {
   background-color: var(--bg-dark-primary);
-  color: var(--text-white);
 }
 
 .menu-item {
   background-color: var(--bg-dark-secondary);
   border: var(--card-border);
   border-radius: var(--border-radius-lg);
-  padding: 24px;
-  color: var(--text-white);
   transition: var(--transition-fast);
-  height: 100%;
 }
 
 .menu-item:hover {
@@ -262,34 +209,26 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
   box-shadow: var(--shadow-hover);
 }
 
-
 .category-title {
   border-bottom: 2px solid var(--primary-color);
-  padding-bottom: 10px;
-  margin-bottom: 20px;
 }
 
 .category-title h4 {
-  font-size: 1.5rem;
-  font-weight: bold;
   color: var(--primary-color);
-  margin-bottom: 0;
 }
+
 .menu-item-title {
   font-family: var(--item-title-font);
   font-size: 1.4rem;
-  font-weight: 700;
 }
+
 .menu-item-description {
-  font-family: var(--desc-font);
   font-size: 0.9rem;
-  color: #6c757d;
 }
+
 .menu-item-price {
   font-family: var(--price-font);
-  font-weight: bold;
   color: var(--primary-color);
-  margin-bottom: 0;
 }
 
 /* ===========================
@@ -297,30 +236,22 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
 =========================== */
 .visit-section {
   background-color: var(--bg-dark-secondary);
-  color: var(--text-white);
 }
 
 .visit-title {
   font-family: var(--font-heading);
   letter-spacing: -0.5px;
   font-size: 2.75rem;
-  color: var(--text-white);
 }
 
 .visit-subtitle {
   color: var(--text-muted);
-  font-family: var(--font-body-visit);
 }
 
 .contact-card {
   background-color: var(--bg-dark-primary);
   border: var(--card-border);
   border-radius: var(--border-radius-lg);
- 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   transition: var(--transition-fast);
 }
 
@@ -332,7 +263,6 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
 
 .contact-icon {
   color: var(--primary-color);
-  font-size: 2rem;
   transition: var(--transition-fast);
 }
 
@@ -341,15 +271,11 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
 }
 
 .contact-title {
-  color: var(--text-white);
-  margin-bottom: 0.75rem;
   font-family: var(--font-heading);
 }
 
 .contact-text {
   color: var(--text-muted);
-  font-family: var(--font-body);
-  font-size: 1rem;
   line-height: 1.6;
 }
 
@@ -368,11 +294,4 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
 
 .address-icon {
   color: var(--primary-color);
-  font-size: 1.5rem;
-  flex-shrink: 0;
-}
-
-.address-text {
-  color: var(--text-white);
-  font-family: var(--font-body-visit);
 }
