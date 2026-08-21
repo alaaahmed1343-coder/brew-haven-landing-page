@@ -1,19 +1,21 @@
-#  Brew Haven - Coffee Shop Landing Page
+# Brew Haven - Coffee Shop Landing Page
 
 [🔗 Live Demo](https://alaaahmed1343-coder.github.io/brew-haven-landing-page/)
 
 A modern, responsive, and elegant landing page for a specialty coffee shop built with **HTML5**, **CSS3**, and **Bootstrap 5**.
 
-##  Features
+## Features
 
 - **Responsive Design:** Fully optimized for desktops, tablets, and mobile screens.
 - **Hero Section:** High-impact background with call-to-action buttons.
 - **Story Section:** Clean layout highlighting brand history and features.
 - **Interactive Menu:** Categorized coffee offerings with custom typography.
+- **Order Now Form:** Custom order section allowing customers to select drinks, quantities, and place orders directly.
 - **Contact & Location:** Styled cards for business hours, location, and contact information.
+- **Footer & Social Links:** Interactive social media integration for better user engagement.
 - **Clean Utility-Based Code:** Refactored to leverage Bootstrap 5 utility classes for maintainability and performance.
 
-##  Built With
+## Built With
 
 * **HTML5** - Semantic markup.
 * **CSS3** - Custom styling, CSS variables, and Google Fonts integration.
