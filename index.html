@@ -45,6 +45,9 @@
                             <a href="#menu" class="nav-link text-white">Menu</a>
                         </li>
                         <li class="nav-item">
+                            <a href="#order" class="nav-link text-white">Order Now</a>
+                        </li>
+                        <li class="nav-item">
                             <a href="#contact" class="nav-link text-white">Contact</a>
                         </li>
                     </ul>
@@ -71,8 +74,8 @@
                         <a href="#menu" class="btn btn-primary-custom px-4 py-3 fw-bold rounded-pill text-decoration-none">
                             View Our Menu
                         </a>
-                        <a href="#contact" class="btn btn-outline-light px-4 py-3 fw-bold rounded-pill text-decoration-none">
-                            Visit Us Today
+                        <a href="#order" class="btn btn-outline-light px-4 py-3 fw-bold rounded-pill text-decoration-none">
+                            Order Online
                         </a>
                     </div>
 
@@ -92,7 +95,7 @@
         <div class="container py-lg-4">
             <div class="row align-items-center g-5">
 
-            <div class="col-lg-6">
+                <div class="col-lg-6">
                     <div class="story-img-wrapper overflow-hidden">
                         <img src="./media/photo-1495862433577-132cf20d7902.jpg" alt="Barista pouring coffee" class="story-img img-fluid d-block w-100">
                     </div>
@@ -293,6 +296,58 @@
         </div>
     </section>
 
+    <!-- Order Section -->
+    <section id="order" class="order-section py-5">
+        <div class="container py-lg-4">
+            <div class="text-center mb-5">
+                <h2 class="order-title fw-bold mb-3 text-white">Order Now</h2>
+                <p class="order-subtitle fs-5 mb-0">
+                    Craving your favorite brew? Place your order and pick it up fresh.
+                </p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="order-card p-4 p-md-5">
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="fullName" class="form-label text-white fw-medium">Full Name</label>
+                                    <input type="text" class="form-control custom-input" id="fullName" placeholder="Enter your name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="phoneNumber" class="form-label text-white fw-medium">Phone Number</label>
+                                    <input type="tel" class="form-control custom-input" id="phoneNumber" placeholder="Enter your phone" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="coffeeChoice" class="form-label text-white fw-medium">Select Drink</label>
+                                    <select class="form-select custom-input" id="coffeeChoice" required>
+                                        <option value="" selected disabled>Choose your coffee...</option>
+                                        <option value="espresso">Espresso</option>
+                                        <option value="cappuccino">Cappuccino</option>
+                                        <option value="latte">Latte</option>
+                                        <option value="mocha">Mocha</option>
+                                        <option value="cold-brew">Cold Brew</option>
+                                        <option value="caramel-macchiato">Caramel Macchiato</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="quantity" class="form-label text-white fw-medium">Quantity</label>
+                                    <input type="number" class="form-control custom-input" id="quantity" min="1" value="1" required>
+                                </div>
+                                <div class="col-12 text-center mt-4">
+                                    <button type="submit" class="btn btn-primary-custom px-5 py-3 fw-bold rounded-pill w-100">
+                                        Confirm Order
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact" class="visit-section py-5">
         <div class="container py-lg-4">
@@ -311,7 +366,7 @@
                             <i class="fa-solid fa-phone"></i>
                         </div>
                         <h5 class="contact-title fw-bold text-white mb-2">Phone</h5>
-                        <p class="contact-text mb-0 fs-6">+=1 (555) 123-4567</p>
+                        <p class="contact-text mb-0 fs-6">+1 (555) 123-4567</p>
                     </div>
                 </div>
 
@@ -357,7 +412,12 @@
     <!-- Footer -->
     <footer class="footer py-4 text-center">
         <div class="container">
-            <p class="mb-0 text-secondary">&copy; 2024 Brew Haven. All rights reserved.</p>
+            <div class="social-icons d-flex justify-content-center gap-3 mb-3">
+                <a href="#" class="social-icon rounded-circle d-flex align-items-center justify-content-center"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" class="social-icon rounded-circle d-flex align-items-center justify-content-center"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="social-icon rounded-circle d-flex align-items-center justify-content-center"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <p class="mb-0 text-secondary">&copy; 2026 Brew Haven. All rights reserved.</p>
         </div>
     </footer>
 

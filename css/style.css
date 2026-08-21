@@ -32,7 +32,6 @@
   --font-heading: 'Playfair Display', serif;
 }
 
-
 html {
   scroll-behavior: smooth;
 }
@@ -92,14 +91,15 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
   background: rgba(255, 255, 255, 0.25);
 }
 
-.hero .btn-primary-custom {
+.btn-primary-custom {
   background-color: var(--primary-color);
   color: var(--text-white);
   transition: var(--transition-fast);
 }
 
-.hero .btn-primary-custom:hover {
+.btn-primary-custom:hover {
   background-color: var(--primary-hover);
+  color: var(--text-white);
   transform: translateY(-2px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
@@ -232,6 +232,49 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
 }
 
 /* ===========================
+   Order Section
+=========================== */
+.order-section {
+  background-color: var(--bg-dark-primary);
+}
+
+.order-title {
+  font-family: var(--font-heading);
+  letter-spacing: -0.5px;
+  font-size: 2.75rem;
+  color: var(--primary-color);
+}
+
+.order-subtitle {
+  color: var(--text-muted);
+}
+
+.order-card {
+  background-color: var(--bg-dark-secondary);
+  border: var(--card-border);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-hover);
+}
+
+.custom-input {
+  background-color: var(--bg-dark-primary) !important;
+  border: 1px solid rgba(210, 165, 118, 0.3) !important;
+  color: var(--text-white) !important;
+  border-radius: var(--border-radius-sm);
+  padding: 12px;
+  transition: var(--transition-fast);
+}
+
+.custom-input:focus {
+  border-color: var(--primary-color) !important;
+  box-shadow: 0 0 0 0.25rem rgba(210, 165, 118, 0.25) !important;
+}
+
+.custom-input::placeholder {
+  color: var(--text-subtle);
+}
+
+/* ===========================
    Visit Us Section
 =========================== */
 .visit-section {
@@ -294,4 +337,28 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
 
 .address-icon {
   color: var(--primary-color);
+}
+
+/* ===========================
+   Footer & Social Icons
+=========================== */
+.footer {
+  background-color: var(--bg-dark-secondary);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  background-color: var(--bg-dark-primary);
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: var(--transition-fast);
+}
+
+.social-icon:hover {
+  background-color: var(--primary-color);
+  color: var(--bg-dark-primary);
+  transform: translateY(-3px);
 }
